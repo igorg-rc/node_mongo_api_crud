@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning ejs</title>
+</head>
+
+<body>
+  <h1>List of students:</h1>
+  <div>
+    <% students.forEach(function(student) { %>
+    <h3>ID: <%= student.id %></h3>
+    <p>Name: <%= student.name %></p>
+    <p>Course: <%= student.course %></p>
+    <% }) %>
+  </div>
+</body>
+
+</html>
